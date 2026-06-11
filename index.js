@@ -10,6 +10,20 @@ const Contact=require("./models/contacts.models")
 //Database connection
 
 mongoose.connect()
+app.post('/add-contact',(req,res)=>{
+  const contact=await Contact.insertOne
+  first_name:req.body,   
+  last_name:req.body.last_name,
+  const contact=await Contact.findById(req.params.id)
+  <form action ="/updatd-contact/:id">
+    res.send (console.log)
+  
+})
+
+app.post('/updated-contact/:id',(req,res)=>{
+
+  await Contact.findByIdAndUpdate()
+})
 
 
 
